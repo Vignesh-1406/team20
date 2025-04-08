@@ -15,6 +15,50 @@
   margin: 0;
   box-sizing: border-box;
 }
+.notification-bar {
+  background: #f13033;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.5s ease-out;
+}
+
+.notification-bar a {
+  color: yellow;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.notification-bar a:hover {
+  color: #ffd700;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+body {
+  padding-top: 0px;
+}
+
+
+.header nav {
+  margin-top: 25px; 
+}
 
 .section__container {
   max-width: var(--max-width);
@@ -131,7 +175,7 @@ nav {
 }
 
 .nav__logo a {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--white);
 }
