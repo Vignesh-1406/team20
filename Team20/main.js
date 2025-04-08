@@ -43,3 +43,11 @@ ScrollReveal().reveal(".client__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+// notification
+function closeNotification() {
+  document.getElementById("notification").style.opacity = "0";
+  setTimeout(() => {
+      document.getElementById("notification").style.display = "none";
+  }, 500);
+}
