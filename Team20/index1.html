@@ -12,6 +12,10 @@
     <title>Travelix</title>
   </head>
   <body>
+    <div class="notification-bar" id="notification">
+      <p>Want a discount? Play our <a href="quiz.html" class="quiz-link">Travel Quiz</a> and win exciting offers!</p>
+      <span class="close-bttn" onclick="closeNotification()">&times;</span>
+  </div>
     <header class="header">
       <nav>
         <div class="nav__logo"><a href="#">Travelix</a></div>
@@ -23,19 +27,6 @@
           <li class="link"><a href="#signup">Signup</a></li>
         </ul>
       </nav>
-      <div class="section__container header__container" id="home"><!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link
-              href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-              rel="stylesheet"
-            />
-            <link rel="stylesheet" href="style.css" />
-            <script src="https://unpkg.com/scrollreveal"></script>
-            <title>Travelix</title>
-          </head>
               <div class="section__container header__container" id="home">
                 <h1>Explore the beauty of nature Discover the new you</h1>
                 <div class="header__form">
@@ -71,51 +62,45 @@
               </div>
               <div class="destination__grid">
                 <div class="destination__card">
-                  <img src="photos/destination-1.jpg" alt="destination" />
+                  <img src="photos/ds1.gif" alt="destination" />
                   <div class="badge">4.7</div>
                   <div class="destination__details">
                     <h4>Himalayas</h4>
-                    <p>Mountains</p>
                   </div>
                 </div>
                 <div class="destination__card">
-                  <img src="photos/destination-2.jpg" alt="destination" />
+                  <img src="photos/ds2.gif" alt="destination" />
                   <div class="badge">4.5</div>
                   <div class="destination__details">
                     <h4>London</h4>
-                    <p>Beauty</p>
                   </div>
                 </div>
                 <div class="destination__card">
-                  <img src="photos/destination-3.jpg" alt="destination" />
+                  <img src="photos/ds3.gif" alt="destination" />
                   <div class="badge">4.3</div>
                   <div class="destination__details">
                     <h4>Tokyo</h4>
-                    <p>Tradition</p>
                   </div>
                 </div>
                 <div class="destination__card">
-                  <img src="photos/destination-4.jpg" alt="destination" />
+                  <img src="photos/ds4.gif" alt="destination" />
                   <div class="badge">4.8</div>
                   <div class="destination__details">
-                    <h4>Greece</h4>
-                    <p>White Dome</p>
+                    <h4>Dubai</h4>
                   </div>
                 </div>
                 <div class="destination__card">
-                  <img src="photos/destination-5.jpg" alt="destination" />
+                  <a href="kerala.html"><img src="photos/ds5.gif" alt="destination" /></a>
                   <div class="badge">4.2</div>
                   <div class="destination__details">
-                    <h4>Sydney</h4>
-                    <p>Waterfall</p>
+                    <h4>Kerala</h4>
                   </div>
                 </div>
                 <div class="destination__card">
-                  <img src="photos/destination-6.jpg" alt="destination" />
+                  <img src="photos/ds6.gif" alt="destination" />
                   <div class="badge">4.7</div>
                   <div class="destination__details">
                     <h4>Amsterdam</h4>
-                    <p>Peace</p>
                   </div>
                 </div>
               </div>
@@ -213,10 +198,10 @@
             <section class="subscribe">
               <div class="section__container subscribe__container">
                 <h4>Subscribe and be Updated</h4>
-                <form action="/">
-                  <input type="text" placeholder="Please enter your email address" />
-                  <button class="btn">Subscribe</button>
-                </form>
+                <form id="subscribeForm">
+                  <input type="email" id="email" placeholder="Please enter your email address" required />
+                  <button type="submit" class="btn">Subscribe</button>
+              </form>
               </div>
             </section>
         
