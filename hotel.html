@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style-hotel.css">
+</head>
+<body>
+    <h1>Hotel Booking</h1>
+    
+    <div class="booking-form">
+        <label for="destination">Destination:</label>
+        <select id="destination">
+            <option value="kerala">Kerala</option>
+            <option value="london">London</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="dubai">Dubai</option>
+            <option value="south-africa">South Africa</option>
+            <option value="amsterdam">Amsterdam</option>
+        </select>
+
+        <label for="checkin">Check-in:</label>
+        <input type="date" id="checkin">
+
+        <label for="checkout">Check-out:</label>
+        <input type="date" id="checkout">
+
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" min="1" value="1">
+
+        <button onclick="searchHotels()">Search Hotels</button>
+    </div>
+
+    <div id="hotel-list"></div>
+
+    <script src="script-hotel.js"></script>
+</body>
+</html>

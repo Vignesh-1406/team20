@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 10px #000;
+}
+
+.quiz h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#timer {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#welcome-screen {
+    text-align: center;
+    padding: 50px;
+}
+
+#welcome-screen button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #00b894;
+    color: white;
+}
+
+#welcome-screen button:hover {
+    background-color: #019170;
+}
+
+#answer-buttons {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: left; /* Align text to the left if needed */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    display: none;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #dc3545 !important;
+    color: #fff;
+}
+
+#home-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00d1b2;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    display: none;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }

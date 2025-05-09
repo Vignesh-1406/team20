@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="app">
+        <div id="welcome-screen">
+            <h1>Welcome to the Quiz!</h1>
+            <button id="start-btn">Start Quiz</button>
+            <button id="exit-btn">Come Back Later</button>
+        </div>
+    
+        <div class="quiz" id="quiz-screen" style="display: none;">
+            <h2 id="question">Question text</h2>
+            <div id="timer">Time left: <span id="time">5</span> seconds</div>
+            <div id="answer-buttons"></div>
+            <button id="next-btn">Next</button>
+            <button id="home-btn" onclick="goHome()">Go to Home Screen</button>
+        </div>
+    </div>
+    
+    <script src="quiz.js"></script>
+</body>    
+</html>
