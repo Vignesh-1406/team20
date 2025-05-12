@@ -8,16 +8,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_bot.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Travelix: Travel Agency</title>
     <link rel="icon" type="image/png" href="photos/plane-icon.png">
   </head>
   <body>
     
-
-
-
-
     <div class="notification-bar" id="notification">
       <p>Want a discount? Play our <a href="quiz.html" class="quiz-link">Travel Quiz</a> and win exciting offers!</p>
     </div>
@@ -235,8 +232,28 @@
                 </div>
               </div>
             </footer>
+
+            
+
+    <!-- Chat Button -->
+<button id="chat-button">Chat</button>
+
+<!-- Chat Box -->
+<div id="chat-box">
+    <header id="chat-header">
+        <span>Chat Support</span>
+        <button id="chat-close" aria-label="Close Chat">&times;</button>
+    </header>
+    <div id="chat-messages" role="log" aria-live="polite"></div>
+    <div id="chat-input-container">
+        <input type="text" id="chat-input" placeholder="Type your message..." aria-label="Chat input">
+        <button id="chat-send" aria-label="Send Message">Send</button>
+    </div>
+</div>
+
         
             <script src="main.js"></script>
+            <script src="script.js"></script>
           </body>
         </html>
         
